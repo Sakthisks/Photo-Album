@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PhotoAlbum</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Image Display</string>
+    <string name="left"><![CDATA[<<]]></string>
+    <string name="right"><![CDATA[>>]]></string>
+    <string name="gallery_view">Gallery view</string>
+    <string name="slide_show">Slide Show</string>
+</resources>

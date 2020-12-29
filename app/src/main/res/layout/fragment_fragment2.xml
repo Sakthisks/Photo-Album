@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CDDC39"
+    tools:context=".fragment2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <Button
+            android:id="@+id/previous"
+            android:layout_width="112dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="96dp"
+            android:text="@string/left"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="112dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="96dp"
+            android:text="@string/right"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/previous"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="60dp"
+            android:text="@string/gallery_view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/previous" />
+
+        <CheckBox
+            android:id="@+id/slideshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="60dp"
+            android:text="@string/slide_show"
+            app:layout_constraintStart_toEndOf="@+id/gallery"
+            app:layout_constraintTop_toBottomOf="@+id/next" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
